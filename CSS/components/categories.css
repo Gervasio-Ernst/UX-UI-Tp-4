@@ -1,0 +1,43 @@
+@layer components {
+  .categories {
+    background-color: var(--color-sand);
+    height: 220px;
+    display: flex;
+    align-items: center;
+  }
+
+  .categories__container {
+    max-width: 845px;
+  }
+
+  .categories__container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .categories__item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-ui);
+    font-size: var(--fs-md);
+    font-weight: 500;
+    color: var(--color-muted);
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+
+  .categories__item img,
+  .categories__item svg {
+    width: 82px;
+    height: 82px;
+    transition: transform 0.2s ease;
+  }
+
+  .categories__item a:hover {
+    color: var(--color-espresso);
+    transform: translateY(-4px);
+  }
+}

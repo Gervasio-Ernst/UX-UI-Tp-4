@@ -1,0 +1,48 @@
+@layer components {
+  .promo {
+    position: relative;
+    height: 335px;
+    background-color: var(--color-sand);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .promo__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    z-index: 2;
+  }
+
+  .promo__title {
+    font-family: var(--font-display);
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--color-espresso);
+    max-width: 372px;
+  }
+
+  .btn--espresso {
+    background-color: var(--color-espresso);
+    color: var(--color-bg);
+    padding: 14px 32px;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .btn--espresso:hover {
+    background-color: var(--color-maroon);
+    transform: translateY(-2px);
+  }
+}

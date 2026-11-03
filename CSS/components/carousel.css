@@ -1,0 +1,37 @@
+@layer components {
+  .section-title {
+    font-family: var(--font-display);
+    font-size: var(--fs-h2);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.28px;
+    color: var(--color-espresso);
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .products {
+    padding: 80px 0;
+    background-color: var(--color-bg);
+  }
+
+  .carousel {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding-bottom: 10px;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel > * {
+    scroll-snap-align: start;
+    flex: 0 0 calc(25% - 3px);
+    min-width: 366px;
+  }
+}
